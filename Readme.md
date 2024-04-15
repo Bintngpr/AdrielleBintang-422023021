@@ -49,6 +49,6 @@
     - Mengintegrasikan Forum
 
 ### Use Case Diagram
- 
+ ![Use case drawio](https://github.com/Bintngpr/AdrielleBintang-422023021/assets/155137148/93c2588a-18ac-4a9f-820d-f7ed5af8cf24)
 ### Class Diagram
- 
+ ![Untitled Diagram drawio](https://github.com/Bintngpr/AdrielleBintang-422023021/assets/155137148/9d449407-960f-47d1-b4ec-a9ab76c5c90d)
