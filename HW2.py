@@ -1,57 +1,51 @@
-class Post:
-    def __init__(self, author, content):
-        self.author = author
-        self.content = content
-        self.comments = []
+from mahasiswa import Mahasiswa
+from dosen import Dosen
+from mata_kuliah import MataKuliah
+from kelas import Kelas
+from sistem_informasi import SistemInformasi
 
-    def add_comment(self, comment):
-        self.comments.append(comment)
+# Inisialisasi objek Sistem Informasi
+sistem = SistemInformasi()
 
-class Forum:
-    def __init__(self):
-        self.posts = []
+# Tambahkan beberapa objek Mahasiswa
+mahasiswa1 = Mahasiswa("Bintang", "422023021", "bintang@ukrida.com")
+mahasiswa2 = Mahasiswa("Yobel", "422023001", "yobel@ukrida.com")
+sistem.tambahkan_mahasiswa(mahasiswa1)
+sistem.tambahkan_mahasiswa(mahasiswa2)
 
-    def create_post(self, author, content):
-        post = Post(author, content)
-        self.posts.append(post)
+# Tambahkan beberapa objek Dosen
+dosen1 = Dosen("Pak. Hendrik", "40231023", "Hendrik@ukrida.com")
+dosen2 = Dosen("Pak. Tubagus", "30918231", "Tubagus@ukrida.com")
+sistem.tambahkan_dosen(dosen1)
+sistem.tambahkan_dosen(dosen2)
 
-    def get_all_posts(self):
-        return self.posts
+# Tambahkan beberapa objek Mata Kuliah
+mata_kuliah1 = MataKuliah("MK101", "Pemrograman Python", 3)
+mata_kuliah2 = MataKuliah("MK102", "Analisis Sistem Informasi", 3)
+sistem.tambahkan_mata_kuliah(mata_kuliah1)
+sistem.tambahkan_mata_kuliah(mata_kuliah2)
 
-class User:
-    def __init__(self, username):
-        self.username = username
+# Buat objek Kelas dan tambahkan mahasiswa ke dalamnya
+kelas1 = Kelas("KelasA", mata_kuliah1, dosen1)
+kelas2 = Kelas("KelasB", mata_kuliah2, dosen2)
+kelas1.tambahkan_mahasiswa(mahasiswa1)
+kelas2.tambahkan_mahasiswa(mahasiswa2)
+sistem.tambahkan_kelas(kelas1)
+sistem.tambahkan_kelas(kelas2)
 
-    def make_post(self, forum, content):
-        forum.create_post(self, content)
+# Contoh penggunaan fungsionalitas
+print("Daftar Mahasiswa:")
+for mahasiswa in sistem.daftar_mahasiswa:
+    print(mahasiswa.nama)
 
-    def make_comment(self, post, comment):
-        post.add_comment(comment)
+print("\nDaftar Dosen:")
+for dosen in sistem.daftar_dosen:
+    print(dosen.nama)
 
-# Contoh penggunaan:
-if __name__ == "__main__":
-    # Membuat forum
-    forum = Forum()
+print("\nDaftar Kelas:")
+for kelas in sistem.daftar_kelas:
+    print(kelas.kode)
 
-    # Membuat pengguna
-    user1 = User("user1")
-    user2 = User("user2")
-
-    # Pengguna membuat posting
-    user1.make_post(forum, "Ini adalah posting pertama.")
-    user2.make_post(forum, "Ini adalah posting kedua.")
-
-    # Mendapatkan semua posting di forum
-    all_posts = forum.get_all_posts()
-
-    # Menambahkan komentar ke posting pertama
-    user2.make_comment(all_posts[0], "Komentar pertama dari user2")
-    user1.make_comment(all_posts[0], "Komentar kedua dari user1")
-
-    # Menampilkan semua posting dan komentar
-    for post in all_posts:
-        print("Posting oleh", post.author.username, ":", post.content)
-        print("Komentar:")
-        for comment in post.comments:
-            print("- ", comment)
-        print()
+print("\nDaftar Mata Kuliah:")
+for mata_kuliah in sistem.daftar_mata_kuliah:
+    print(mata_kuliah.nama)
