@@ -53,19 +53,19 @@ o	Mengintegrasikan Forum
 
 ## Use Case
 •	Melihat Jadwal Kuliah
-
+![use case 1 drawio](https://github.com/Bintngpr/AdrielleBintang-422023021/assets/155137148/40c8f700-36be-4117-8930-1780931a83a7)
 
 •	Mendaftar mata kuliah
- 
+ ![use case 2 drawio](https://github.com/Bintngpr/AdrielleBintang-422023021/assets/155137148/4d212af2-d14f-473a-8e07-cc83faf193fe)
 
 •	Memasukkan Nilai Mahasiswa
- 
+ ![use case 3 drawio](https://github.com/Bintngpr/AdrielleBintang-422023021/assets/155137148/37e5f777-1184-4b40-a224-f58f789ba334)
 
 •	Mengelola Data Mahasiswa
- 
+ ![use case 4 drawio](https://github.com/Bintngpr/AdrielleBintang-422023021/assets/155137148/53c01026-e8f5-4c1f-9aaf-68876ab13cf6)
 
 ## Class Diagram
- 
+ ![class diagram drawio](https://github.com/Bintngpr/AdrielleBintang-422023021/assets/155137148/e8b1bb83-79d2-4a59-ae58-8876aeb77d25)
 
 
 
