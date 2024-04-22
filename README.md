@@ -57,25 +57,25 @@ o   Mengelola Data Pusat karir
 
 ## Use Case
 •   Login ke Sisfo Ukd
-
+![use case 5 drawio](https://github.com/Bintngpr/AdrielleBintang-422023021/assets/155137148/e46e343c-ac39-4f05-84a0-540e727d92dc)
 
 •	Melihat Jadwal Kuliah
-
+![use case 1 drawio](https://github.com/Bintngpr/AdrielleBintang-422023021/assets/155137148/796c671a-436a-49de-876f-8e9ed594bb3b)
 
 •	Mendaftar mata kuliah
- 
+ ![use case 2 drawio](https://github.com/Bintngpr/AdrielleBintang-422023021/assets/155137148/420ca551-1ad9-406f-aa4d-6995ab4b649f)
 
 •	Memasukkan Nilai Mahasiswa
- 
+ ![use case 3 drawio](https://github.com/Bintngpr/AdrielleBintang-422023021/assets/155137148/bcb3347d-8c31-4fa1-bdc6-3cc1074360cd)
 
 •	Mengelola Data Mahasiswa
-
+![use case 4 drawio](https://github.com/Bintngpr/AdrielleBintang-422023021/assets/155137148/6fc0d9d4-04a7-4e11-bdb1-cd21d988c510)
 
 •   Melihat Lowongan Pusat Karir
- 
+ ![use case 6 drawio](https://github.com/Bintngpr/AdrielleBintang-422023021/assets/155137148/fab2f0e0-7595-4ebd-9fab-6fa635e310cf)
 
 ## Class Diagram
- 
+ ![class diagram drawio](https://github.com/Bintngpr/AdrielleBintang-422023021/assets/155137148/e3543c60-34a7-46c7-b7b8-e4330dc5dd36)
 
 
 
