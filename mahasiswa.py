@@ -5,13 +5,14 @@ class Mahasiswa:
         self.email = email
         self.jadwal_kuliah = []
 
+    def __str__(self):
+        return f"Mahasiswa: {self.nama}, NIM: {self.nim}, Email: {self.email}"
+
     def tambahkan_jadwal_kuliah(self, jadwal):
         self.jadwal_kuliah.append(jadwal)
 
     def lihat_jadwal_kuliah(self):
-        # Implementasi untuk melihat jadwal kuliah
         pass
 
     def mendaftar_mata_kuliah(self, mata_kuliah):
-        # Implementasi untuk mendaftar mata kuliah
         pass
