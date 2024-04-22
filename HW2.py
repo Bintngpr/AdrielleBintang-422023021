@@ -11,11 +11,16 @@ from authenticator import Authenticator
 sistem = SistemInformasi()
 authenticator = Authenticator()
 
-authenticator.add_user("user1", "password1")
-authenticator.add_user("user2", "password2")
+authenticator.add_user("422023021", "422023021")
+authenticator.add_user("422023001", "422023001")
 
 username = input("Masukkan username: ")
 password = input("Masukkan password: ")
+
+if authenticator.login(username, password):
+    print("\n***Login berhasil!***")
+else:
+    print("\n***Login gagal! Username atau password salah.***")
 
 mahasiswa1 = Mahasiswa("Adrielle Bintang Pratama", "422023021", "bintang@ukrida.com")
 mahasiswa2 = Mahasiswa("Yobel Kimtoputra", "422023001", "yobel@ukrida.com")
@@ -56,11 +61,6 @@ pusat_karir.daftar_lowongan(lowongan2)
 
 pusat_karir.tampilkan_mahasiswa_terdaftar()
 pusat_karir.tampilkan_lowongan_terdaftar()
-
-if authenticator.login(username, password):
-    print("Login berhasil!")
-else:
-    print("Login gagal! Username atau password salah.")
 
 print("\n***Daftar Mahasiswa:***")
 for mahasiswa in sistem.daftar_mahasiswa:

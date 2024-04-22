@@ -8,5 +8,5 @@ class StafAdministrasi:
         mahasiswa.nama = nama_baru
         mahasiswa.nim = nim_baru
         mahasiswa.email = email_baru
-        print(f"Informasi mahasiswa {mahasiswa.nama} berhasil diperbarui oleh {self.nama}.")
+        print(f"\n***Informasi mahasiswa {mahasiswa.nama} berhasil diperbarui oleh {self.nama}.***")
 
