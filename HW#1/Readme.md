@@ -33,12 +33,15 @@
 
 ## User Stories (Functionalities)
 •	**Mahasiswa**
+o   Login
 o	Melihat Jadwal
 o	Mendaftar Mata Kuliah
 o	Mendapat Pemberitahuan Pembayaran
 o	Melihat Transkrip Akademik
+o   Melihat Lowongan Pusat Karir
 
 •	**Dosen**
+o   Login
 o	Memasukkan Nilai
 o	Melihat Daftar Mahasiswa
 o	Melihat Statistik Aktivitas
@@ -47,11 +50,15 @@ o	Melihat Statistik Aktivitas
 o	Mengelola Data Mahasiswa
 o	Laporan Data Mahasiswa
 o	Mengintegrasikan Forum
+o   Mengelola Data Pusat karir
 
 
 
 
 ## Use Case
+•   Login ke Sisfo Ukd
+
+
 •	Melihat Jadwal Kuliah
 
 
@@ -62,6 +69,9 @@ o	Mengintegrasikan Forum
  
 
 •	Mengelola Data Mahasiswa
+
+
+•   Melihat Lowongan Pusat Karir
  
 
 ## Class Diagram
